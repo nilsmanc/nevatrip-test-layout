@@ -48,9 +48,8 @@
             <div class="description__price">
               <div class="price">
                 <div class="price__main">
-                  <div class="price__main-inner">900₽</div>
+                  <div class="price__main-inner">900 ₽</div>
                 </div>
-                <div class="price__pier">1200 ₽ на причале</div>
               </div>
               <a href="#">
                 <button class="btn">Подробнее</button>
@@ -94,10 +93,10 @@
             <div class="description__price">
               <div class="price">
                 <div class="price__main">
-                  <div class="price__main-inner price-1">2900₽</div>
-                  <div class="price__main-inner price-2">900₽</div>
+                  <div class="price__main-inner price-1">2900 ₽</div>
+                  <div class="price__main-inner price-2">900 ₽</div>
                 </div>
-                <div class="price__pier price-1">1200 ₽ на причале</div>
+                <div class="price__pier price-1">1200 р на причале</div>
                 <div class="price__pier price-2">1200 ₽ на причале</div>
               </div>
               <a href="#">
@@ -134,19 +133,18 @@
                   <li>12:00</li>
                   <li>12:00</li>
                   <li class="more">еще...</li>
-                  <div class="extratime">
-                    <li>12:00</li>
-                    <li>12:00</li>
-                    <li>12:00</li>
-                  </div>
+                  <li class="extratime">12:00</li>
+                  <li class="extratime">12:00</li>
+                  <li class="extratime">12:00</li>
                 </ul>
               </li>
             </ul>
             <div class="description__price">
               <div class="price">
                 <div class="price__main">
-                  <div class="price__main-inner">900₽</div>
+                  <div class="price__main-inner">900 ₽</div>
                 </div>
+                <div class="price__pier">1200 ₽ на причале</div>
               </div>
               <a href="#">
                 <button class="btn">Подробнее</button>
@@ -157,12 +155,12 @@
       </div>
     </section>
     <script>
-      const extraTime = document.querySelector('.extratime')
+      const extraTime = document.querySelectorAll('.extratime')
       const moreButton = document.querySelector('.more')
       if (moreButton) {
         moreButton.addEventListener('click', (e) => {
           e.target.parentNode.removeChild(e.target)
-          extraTime.classList.remove('extratime')
+          extraTime.forEach((item) => item.classList.remove('extratime'))
         })
       }
     </script>
