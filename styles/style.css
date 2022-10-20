@@ -136,6 +136,7 @@ body {
   padding-right: 8px;
   margin-bottom: 35px;
 }
+
 .description__time li {
   display: inline-block;
   height: 24px;
@@ -202,6 +203,10 @@ body {
   font-weight: 600;
 }
 .item-3 {
+  display: none;
+}
+
+.extratime {
   display: none;
 }
 
@@ -322,6 +327,7 @@ body {
     width: 73px;
     font-size: 16px;
     line-height: 28px;
+    margin: 0 0 5px 0;
   }
   .item-1 .description__time > li:last-child {
     display: none;
