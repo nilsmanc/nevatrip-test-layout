@@ -185,7 +185,7 @@ body {
   display: none;
 }
 .btn {
-  width: 165px;
+  width: 100px;
   height: 44px;
   background-color: #fed74b;
   border-radius: 20px;
@@ -197,7 +197,7 @@ body {
 }
 .item-2 .btn {
   border-radius: 10px;
-  width: 193px;
+  width: 90px;
   height: 44px;
   font-weight: 600;
 }
@@ -209,6 +209,14 @@ body {
   display: none !important;
 }
 
+@media (min-width: 340px) {
+  .btn {
+    width: 165px;
+  }
+  .item-2 .btn {
+    width: 193px;
+  }
+}
 @media (min-width: 768px) {
   .container {
     min-width: 768px;
@@ -274,7 +282,7 @@ body {
   }
   .title-2 {
     display: inline;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 24px;
   }
