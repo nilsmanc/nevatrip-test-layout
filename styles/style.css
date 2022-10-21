@@ -209,7 +209,7 @@ body {
   display: none !important;
 }
 
-@media (min-width: 340px) {
+@media (min-width: 375px) {
   .btn {
     width: 165px;
   }
